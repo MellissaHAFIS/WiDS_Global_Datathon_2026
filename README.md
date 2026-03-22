@@ -5,6 +5,7 @@
 This repository contains code and data for the WiDS Global Datathon 2026 challenge: predicting the probability that a wildfire will threaten an evacuation zone within 12, 24, 48, and 72 hours, using only the first five hours of incident data.
 
 - Kaggle Competition: [WiDSWorldWide_GlobalDathon26](https://www.kaggle.com/competitions/WiDSWorldWide_GlobalDathon26/overview)
+- Competition closes: May 2, 2026.
 
 ## Problem Statement
 

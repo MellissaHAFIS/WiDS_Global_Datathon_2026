@@ -1,0 +1,40 @@
+# --- Python ---
+__pycache__/
+*.py[cod]
+*$py.class
+
+# --- Virtual Environments ---
+venv/
+.venv/
+env/
+ENV/
+
+# --- macOS ---
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# --- Packaging / Distribution ---
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# --- Unit test / coverage ---
+.coverage
+.coverage.*
+htmlcov/
+.tox/
+.pytest_cache/
+
+# --- Logs ---
+*.log
+
+# --- IDEs / Editors ---
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# --- Jupyter ---
+.ipynb_checkpoints/

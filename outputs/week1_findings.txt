@@ -1,0 +1,46 @@
+
+=== DATA QUALITY ===
+- Missing values: [fill from audit output above]
+- Constant columns: [fill from audit]
+- Distribution shift (train vs test): [fill top shifted features]
+
+=== TARGET DISTRIBUTION ===
+- Event rate: 69/221 = 31.2%
+- Median time-to-hit for events: [fill]
+- Censoring pattern: [fill — mostly at 72h or spread?]
+- KM P(hit by 12h): [fill]  | P(hit by 24h): [fill]
+  KM P(hit by 48h): [fill]  | P(hit by 72h): [fill]
+
+=== TOP PREDICTIVE FEATURES ===
+- By C-index: [fill top 5 from feat_ci]
+- By Cohen d (event vs censored): [fill top 5 from diff_df]
+- Most correlated with time_to_hit: [fill from target_corr]
+
+=== COLLINEARITY ===
+- Highly correlated pairs (|r|>0.85): [fill from high_corr_df]
+- Implication: drop one from each pair in Week 2
+
+=== LEAKAGE CHECK ===
+- No features with C-index > 0.85 found: [confirm]
+- Distance features: no suspicious correlations: [confirm]
+
+=== NEAR/FAR STRATIFICATION ===
+- Suggested threshold: [fill best threshold from analysis]
+- Near zone event rate vs far zone event rate: [fill]
+
+=== TEMPORAL PATTERNS ===
+- Peak fire months: [fill]
+- Day-of-week effect: [fill]
+- Hour-of-day effect: [fill]
+
+=== BASELINE CV SCORES ===
+- B0 KM Constant : Hybrid ~ [fill]
+- B1 Cox PH      : Hybrid = [fill] ± [fill]
+- B2 Weibull AFT : Hybrid = [fill] ± [fill]
+- B3 RSF         : Hybrid = [fill] ± [fill]
+
+=== WEEK 2 PRIORITIES ===
+1. Feature engineering: directed threat index, time-to-reach proxy
+2. Gradient Boosting Survival Analysis (GBSA)
+3. Near/Far stratified models with validated threshold
+4. Calibration: check if RSF/Cox are well-calibrated at each horizon

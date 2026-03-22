@@ -1,36 +1,3 @@
-I’ll now review the four state-of-the-art notebooks sequentially, extract their modeling and validation patterns, and then synthesize a practical “do vs avoid” conclusion list tailored to your competition metric.
-
-Retrieving Notebook summary.
-
-Retrieving Notebook summary.
-
-Retrieving Notebook summary.
-
-Retrieving Notebook summary.
-
-I have the notebook structure; next I’ll extract the actual model logic and metric handling (algorithms, blending, validation) so the final recommendations are evidence-based, not just titles.
-
-Searched for regex `Hybrid|Brier|C-index|concordance|cox|Cox|RandomSurvivalForest|GBSA|LightGBM|lgb|blend|stack|stratified|isotonic|calibration|submission` (`**/state_art/*.ipynb`), 200 results
-
-Read [](file:///Users/mellissahafis/Documents/WiDS_Global_Datathon_2026/state_art/0-97124-gbsa-rsf-lgb-survival-engine.ipynb)
-
-Read [](file:///Users/mellissahafis/Documents/WiDS_Global_Datathon_2026/state_art/0-9716-tri-survival-stack-distancestratifiedblend.ipynb#1-1), lines 1 to 260
-
-Read [](file:///Users/mellissahafis/Documents/WiDS_Global_Datathon_2026/state_art/0-9716-tri-survival-stack-distancestratifiedblend.ipynb#260-260), lines 260 to 620
-
-Read [](file:///Users/mellissahafis/Documents/WiDS_Global_Datathon_2026/state_art/0-9716-tri-survival-stack-distancestratifiedblend.ipynb#620-620), lines 620 to 980
-
-Read [](file:///Users/mellissahafis/Documents/WiDS_Global_Datathon_2026/state_art/0-9716-tri-survival-stack-distancestratifiedblend.ipynb#980-980), lines 980 to 1350
-
-I’ve extracted the full logic of the first two notebooks; next I’ll review the ensemble notebook and the EDA notebook to identify which ideas are genuinely transferable versus leaderboard-overfit heuristics.
-
-Read [](file:///Users/mellissahafis/Documents/WiDS_Global_Datathon_2026/state_art/wids-2026-ensemble-of-solutions-h-blend.ipynb#1-1), lines 1 to 420
-
-Read [](file:///Users/mellissahafis/Documents/WiDS_Global_Datathon_2026/state_art/wids-2026-ensemble-of-solutions-h-blend.ipynb#420-420), lines 420 to 753
-
-Read [](file:///Users/mellissahafis/Documents/WiDS_Global_Datathon_2026/state_art/wids2026-edanalysis.ipynb)
-
-Review completed for all 4 notebooks, one by one, with metric-focused conclusions.
 
 **Notebook 1 Review**
 0-97124-gbsa-rsf-lgb-survival-engine.ipynb
@@ -98,5 +65,3 @@ Risks / weaknesses:
 - Do not over-index on giant seed sweeps without strict validation controls; 221 rows can still overfit through repeated tuning.
 - Do not keep EDA only as plots if your downstream consumer is AI; generate text tables and numeric summaries.
 - Do not use heuristic blend engines alone (rank-order blending) without metric-grounded validation.
-
-If you want, next I can produce a single consolidated “best-practice notebook blueprint” from these 4, with only the robust parts kept and the risky parts removed.

@@ -1,0 +1,43 @@
+# WiDS Global Datathon 2026 — Python Requirements
+# Wildfire Survival Analysis
+# Python >= 3.10 recommended
+
+# ── Core Data ────────────────────────────────────────────────
+numpy>=1.26.0
+pandas>=2.2.0
+scipy>=1.13.0
+
+# ── Survival Analysis ────────────────────────────────────────
+lifelines>=0.29.0          # Cox PH, Weibull AFT, Kaplan-Meier, C-index
+scikit-survival>=0.23.0    # Random Survival Forest, GBSA, IPCW Brier
+
+# ── Machine Learning ─────────────────────────────────────────
+scikit-learn>=1.5.0
+xgboost>=2.0.0
+lightgbm>=4.3.0
+
+# ── Hyperparameter Optimization ──────────────────────────────
+optuna>=3.6.0
+
+# ── Calibration ──────────────────────────────────────────────
+betacal>=0.1.0             # Beta calibration
+
+# ── Visualization ────────────────────────────────────────────
+matplotlib>=3.9.0
+seaborn>=0.13.0
+
+# ── Experiment Tracking ──────────────────────────────────────
+mlflow>=2.13.0
+
+# ── Notebook ─────────────────────────────────────────────────
+jupyterlab>=4.2.0
+ipywidgets>=8.1.0
+
+# ── Utilities ────────────────────────────────────────────────
+tqdm>=4.66.0
+pyyaml>=6.0.1
+
+# venv
+# python3 -m venv venv
+# source venv/bin/activate
+# deactivate
