@@ -6,6 +6,7 @@ This repository contains code and data for the WiDS Global Datathon 2026 challen
 
 - Kaggle Competition: [WiDSWorldWide_GlobalDathon26](https://www.kaggle.com/competitions/WiDSWorldWide_GlobalDathon26/overview)
 - Competition closes: May 2, 2026.
+- **Detailed solution writeup**: https://www.kaggle.com/competitions/WiDSWorldWide_GlobalDathon26/writeups/wids-global-datathon-2026-solution-kagglettes
 
 ## Problem Statement
 
